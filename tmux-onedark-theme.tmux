@@ -1,4 +1,10 @@
 #!/bin/bash
+
+src() {
+	[ -f "$1" ] && source "$1"
+}
+src ~/.cache/tmux_theme
+
 onedark_background=${onedark_background:-"#282c34"}
 onedark_foreground=${onedark_foreground:-"#aab2bf"}
 onedark_blue=${onedark_blue:-"#61afef"}
